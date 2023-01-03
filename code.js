@@ -10,7 +10,7 @@ const gameBoard = document.getElementById('game-board')
 function main(currentTime) {
     if(gameOver){
         if (confirm(`You lost. Score ${snakeBody.length}. Press ok to restart `)) {
-            window.location='/'
+            location.reload()
         }
         return
     }
